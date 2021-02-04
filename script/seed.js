@@ -182,7 +182,7 @@ const properties = [
     name: 'Imaginary House',
     imageUrl:
       'https://c4.wallpaperflare.com/wallpaper/820/158/492/house-architecture-luxury-homes-modern-car-hd-wallpaper-preview.jpg',
-    address: '45 Nonexistent Place',
+    address: '45 Shadow Place',
     price: 100000,
     description: "Got to be good looking, cuz it's so hard to see.",
     status: 'available'
@@ -209,7 +209,7 @@ const properties = [
     name: 'Jacaranda House',
     imageUrl:
       'https://i.pinimg.com/originals/9c/05/93/9c0593cc688e402eb80ccb4ea25ae195.jpg',
-    address: '45 Nonexistent Place',
+    address: '45 Fleur de Lis Place',
     price: 104400,
     description: 'A flower in springtime.',
     status: 'available'
