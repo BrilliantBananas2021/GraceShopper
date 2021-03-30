@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {_addToCart} from '../store/cart'
 import {_getProperties} from '../store/properties'
 import {Link} from 'react-router-dom'
-import Toast from '../../public/toast/toast'
+// import Toast from '../../public/toast/toast'
 
 // Notice that we're exporting the Allproperties component twice. The named export
 // (below) is not connected to Redux, while the default export (at the very
