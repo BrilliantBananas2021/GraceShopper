@@ -10,7 +10,10 @@ if (process.env.DATABASE_URL) {
     logging: false,
     ssl: true,
     dialectOptions: {
-      ssl: true
+      ssl: {
+        require: true,
+        rejectUnauthorized: false // <<<<<<< YOU NEED THIS
+      }
     }
   })
 } else {
