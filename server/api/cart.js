@@ -4,7 +4,13 @@ const {User, Property} = require('../db/models')
 module.exports = router
 
 router.get('/:id', async (req, res, next) => {
+  // console.log('cart id', req.params.id)
+  // return res.send({})
   try {
+    if (req.params.id === 'undefined') {
+      console.log('cart undefined!')
+      return res.send({properties: []})
+    }
     const cart = await User.findByPk(req.params.id, {
       include: [{model: Property}]
     })

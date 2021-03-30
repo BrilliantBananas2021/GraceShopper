@@ -24,4 +24,3 @@ const Toast = {
 }
 
 document.addEventListener('DOMContentLoaded', () => Toast.init())
-export default Toast

@@ -3,20 +3,23 @@ const pkg = require('../../package.json')
 
 const databaseName = pkg.name + (process.env.NODE_ENV === 'test' ? '-test' : '')
 
-let db;
+let db
 if (process.env.DATABASE_URL) {
   //heroku configuration
   db = new Sequelize(process.env.DATABASE_URL, {
     logging: false,
     ssl: true,
     dialectOptions: {
-      ssl: true,
-    },
+      ssl: {
+        require: true,
+        rejectUnauthorized: false // <<<<<<< YOU NEED THIS
+      }
+    }
   })
 } else {
   //local configuration
   db = new Sequelize(`postgres://localhost:5432/${databaseName}`, {
-    logging: false,
+    logging: false
   })
 }
 module.exports = db

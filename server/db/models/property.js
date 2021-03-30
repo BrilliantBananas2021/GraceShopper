@@ -25,13 +25,13 @@ const Property = db.define('property', {
       notEmpty: true
     }
   },
-  price: {
-    type: Sequelize.INTEGER,
-    allowNull: false,
-    validate: {
-      notEmpty: true
-    }
-  },
+  // price: {
+  //   type: Sequelize.STRING,
+  //   allowNull: false,
+  //   validate: {
+  //     notEmpty: true
+  //   }
+  // },
   description: {
     type: Sequelize.TEXT,
     allowNull: false,
